@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BxTextField'
-  s.version          = '0.1.0'
+  s.version          = '1.2.5'
   s.summary          = 'Text field to try and get BxInputController working in Swift 4'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'BxTextField/Classes/**/*'
+  s.source_files = 'BxTextField/Sources/**/*'
   
   # s.resource_bundles = {
   #   'RtdBluetoothPod' => ['BxTextField/Assets/*.png']
@@ -39,4 +39,6 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'  (make sure to update below dependencies below to a specific version)
+
+  s.xcconfig = { 'SWIFT_VERSION' => '4.0' }
 end
